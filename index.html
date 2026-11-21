@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF7EB">
+  <meta name="description" content="100 分鐘親職善意溝通演練。以詠春拳父女案例，練習辨識 4D、理解彼此需要、訂定約定與道歉修補。">
+  <title>約定之後，聽見彼此｜親職討論演練</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="workshop.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#slide">跳至投影片</a>
+  <header class="topbar">
+    <a class="brand" href="#1" aria-label="回到封面"><span class="brand-mark" aria-hidden="true">◌</span> 約定之後，聽見彼此</a>
+    <span id="chapter-name" class="chapter-name"></span>
+    <nav aria-label="簡報工具">
+      <button id="chapters-button" aria-haspopup="dialog">章節</button>
+      <button id="notes-button" aria-haspopup="dialog">帶領筆記</button>
+      <button id="fullscreen-button" aria-label="切換全螢幕">全螢幕</button>
+    </nav>
+  </header>
+  <main id="stage"><article id="slide" tabindex="-1" aria-labelledby="slide-title"></article></main>
+  <footer class="controls">
+    <div class="navigation"><button id="previous" aria-label="上一頁">上一頁</button><span id="counter" aria-live="polite"></span><button id="next" aria-label="下一頁">下一頁</button></div>
+    <span class="key-hint">方向鍵換頁 <span>·</span> 空白鍵揭示</span>
+    <div class="reveal-controls"><button id="hide-answer" hidden>收起參考</button><button id="reveal" class="primary" hidden>揭示參考</button></div>
+    <div class="progress" aria-hidden="true"><div id="progress-fill"></div></div>
+  </footer>
+  <dialog id="chapters-dialog" aria-labelledby="chapters-title">
+    <div class="dialog-header"><h2 id="chapters-title">100 分鐘的討論路線</h2><button class="close-dialog" aria-label="關閉章節">✕</button></div>
+    <nav id="chapter-list" aria-label="課程章節"></nav>
+    <p class="dialog-tip">主線按順序帶領。備用情境可替換部分討論，不另加時間。</p>
+  </dialog>
+  <dialog id="notes-dialog" aria-labelledby="notes-title">
+    <div class="dialog-header"><h2 id="notes-title">這一頁的帶領筆記</h2><button class="close-dialog" aria-label="關閉筆記">✕</button></div>
+    <div id="notes-content"></div>
+    <a href="sources.html" target="_blank" rel="noopener">來源與情境說明</a>
+  </dialog>
+  <noscript>這份簡報需要啟用 JavaScript 才能換頁及揭示參考答案。</noscript>
+</body>
+</html>
